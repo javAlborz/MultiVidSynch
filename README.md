@@ -4,7 +4,7 @@ This repository contains an implementation of a video synchronization algorithm 
 
 ## Introduction
 
-Synchronizing videos is a crucial task in many multimedia applications, from film production to surveillance. Traditional methods often rely on timestamps or manual alignment, which can be error-prone or time-consuming. This implementation offers an automated approach by leveraging the power of computer vision techniques. By extracting features from video frames and constructing trajectories, the algorithm can determine the synchronization parameters that align videos in time.
+Synchronizing videos is a crucial task in many multimedia applications ranging from film production to sports broacasting. Traditional methods often rely on timestamps or manual alignment, which can be error-prone or time-consuming. This implementation offers an automated approach by leveraging the power of computer vision techniques. By extracting features from video frames and constructing trajectories, the algorithm can determine the synchronization parameters that align videos in time.
 
 ## Features
 
@@ -38,3 +38,16 @@ pip install -r requirements.txt
 1. Place your videos in the `sample_alborz_x/younes` directory (or modify the `CAPTURE_FILES` variable in the script to point to your videos).
 
 2. Run the main script:
+
+3. The script will process the videos, extract features, construct trajectories, and determine synchronization parameters. The results will be printed to the console.
+
+4. (Optional) For visualization, uncomment the visualization sections in the code to see keypoints, matches, and trajectories.
+
+### Contribution
+
+Contributions are welcome! Please submit a pull request or open an issue if you have improvements or find any bugs.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
