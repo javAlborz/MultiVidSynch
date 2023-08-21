@@ -98,7 +98,7 @@ def construct_trajectories(matches, keypoints1, keypoints2, existing_trajectorie
     return trajectories, match_map
 
 
-def filter_trajectories(trajectories, F=None, min_length=3, variance_threshold=5, score_threshold=0.32):    #len 28 vt 500.000 for ORB. len 15 vt 50.000 for SIFT. AKAZE min_length=20, variance_threshold=50000, score_threshold=0.32. Prøver score threshold 10
+def filter_trajectories(trajectories, F=None, min_length=3, variance_threshold=5, score_threshold=0.32):    
     # Initialize list to hold filtered trajectories
     filtered_trajectories = []
 
@@ -193,7 +193,6 @@ def calculate_residual_error(trajectory1, trajectory2):
         error += abs(trajectory2_unique[i][0]*epilines1[i][0][0] + trajectory2_unique[i][1]*epilines1[i][0][1] + epilines1[i][0][2])
 
     return error
-
 
 def find_optimal_offset(trajectory1, trajectory2):
     # Define the cost function

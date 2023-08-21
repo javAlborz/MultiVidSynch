@@ -6,6 +6,8 @@ This repository contains an implementation of a video synchronization algorithm 
 
 Synchronizing videos is a crucial task in many multimedia applications ranging from film production to sports broacasting. Traditional methods often rely on timestamps or manual alignment, which can be error-prone or time-consuming. This implementation offers an automated approach by leveraging the power of computer vision techniques. By extracting features from video frames and constructing trajectories, the algorithm can determine the synchronization parameters that align videos in time.
 
+![Trajectory Construction Demonstration](./assets/trajectory_construction.gif)
+
 ## Features
 
 - **Feature Extraction**: Uses AKAZE for robust and efficient feature extraction.
