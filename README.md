@@ -5,7 +5,7 @@ Subframe Accuracy, A. Elhayek et al](https://vcai.mpi-inf.mpg.de/files/DAGM2012/
 
 ## Introduction
 
-Synchronizing videos is a crucial task in many multimedia applications ranging from film production to sports broacasting. Traditional methods often rely on timestamps or manual alignment, which can be error-prone or time-consuming. This implementation offers an automated approach by leveraging the power of computer vision techniques. By extracting features from video frames and constructing trajectories, the algorithm can determine the synchronization parameters that align videos in time.
+Synchronizing videos is a crucial task in many multimedia applications ranging from film production to sports broacasting. Traditional methods often rely on timestamps or manual alignment, which can be error-prone or time-consuming. This implementation offers an automated approach by leveraging tradiitional computer vision techniques. By extracting features from video frames and constructing trajectories, the algorithm can determine the synchronization parameters that align videos in time.
 
 ![Trajectory Construction Demonstration](./assets/trajectory_construction.gif)
 
