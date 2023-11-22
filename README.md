@@ -1,7 +1,5 @@
 # Video Synchronization Based on Feature Trajectories
-
-This repository contains an implementation of a video synchronization algorithm based on feature trajectories, as described in the paper [Feature-Based Multi-Video Synchronization with
-Subframe Accuracy, A. Elhayek et al](https://vcai.mpi-inf.mpg.de/files/DAGM2012/DAGM2012.pdf). The algorithm aims to synchronize multiple videos by extracting features, constructing trajectories, and matching these trajectories across videos.
+Full implementation of a video synchronization algorithm based on feature trajectories, as described in the paper [Feature-Based Multi-Video Synchronization withSubframe Accuracy, A. Elhayek et al](https://vcai.mpi-inf.mpg.de/files/DAGM2012/DAGM2012.pdf). The algorithm aims to synchronize multiple videos by extracting features, constructing trajectories, and matching these trajectories across videos.
 
 ## Introduction
 
