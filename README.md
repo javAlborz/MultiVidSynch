@@ -1,9 +1,9 @@
 # Video Synchronization Based on Feature Trajectories
-Full implementation of a video synchronization algorithm based on feature trajectories, as described in the paper [Feature-Based Multi-Video Synchronization withSubframe Accuracy, A. Elhayek et al](https://vcai.mpi-inf.mpg.de/files/DAGM2012/DAGM2012.pdf). The algorithm aims to synchronize multiple videos by extracting features, constructing trajectories, and matching these trajectories across videos.
+Full implementation of a video synchronization algorithm based on feature trajectories, as described in the paper [Feature-Based Multi-Video Synchronization with Subframe Accuracy, A. Elhayek et al](https://vcai.mpi-inf.mpg.de/files/DAGM2012/DAGM2012.pdf). The algorithm aims to synchronize multiple videos by extracting features, constructing trajectories, and matching these trajectories across videos.
 
 ## Introduction
 
-Synchronizing videos is a crucial task in many multimedia applications ranging from film production to sports broacasting. Traditional methods often rely on timestamps or manual alignment, which can be error-prone or time-consuming. This implementation offers an automated approach by leveraging tradiitional computer vision techniques. By extracting features from video frames and constructing trajectories, the algorithm can determine the synchronization parameters that align videos in time.
+Synchronizing videos is a crucial task in many multimedia applications ranging from film production to sports broadcasting. Traditional methods often rely on timestamps or manual alignment, which can be error-prone or time-consuming. This implementation offers an automated approach by leveraging traditional computer vision techniques. By extracting features from video frames and constructing trajectories, the algorithm can determine the synchronization parameters that align videos in time.
 
 ![Trajectory Construction Demonstration](./assets/trajectory_construction.gif)
 
@@ -17,32 +17,28 @@ Synchronizing videos is a crucial task in many multimedia applications ranging f
 
 ## User Guide
 
-### Prerequisites
-Install the required packages:
-
-pip install -r requirements.txt
-
-
 ### Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your_username/video-synchronization.git
-   cd video-synchronization
-
-(Optional) Create a virtual environment:
-    python3 -m venv venv
-    source venv/bin/activate
+```bash
+git clone https://github.com/javAlborz/MultiVidSynch.git
+cd MultiVidSynch
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
 
 ### Usage
 
-1. Place your videos in the `sample_alborz_x/younes` directory (or modify the `CAPTURE_FILES` variable in the script to point to your videos).
+1. Set `BASE_DIR` and `CAPTURE_FILES` in `feature_based_approach/OTP.py` to your video files.
+2. Run from the algorithm's directory so its relative sample paths resolve:
 
-2. Run the main script:
+   ```bash
+   cd feature_based_approach
+   python OTP.py
+   ```
 
-3. The script will process the videos, extract features, construct trajectories, and determine synchronization parameters. The results will be printed to the console.
-
-4. (Optional) For visualization, uncomment the visualization sections in the code to see keypoints, matches, and trajectories.
+3. The script extracts features, constructs trajectories, and estimates temporal alignment between the videos. Results are printed to the console.
+4. For visualization, uncomment the visualization sections in the script.
 
 ### Contribution
 
